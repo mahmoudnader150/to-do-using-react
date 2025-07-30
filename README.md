@@ -24,4 +24,3 @@ A simple and modern to-do list application built with React and Vite.
 
 ---
 
-Feel free to customize and enhance this project!
