@@ -20,7 +20,7 @@ A simple and modern to-do list application built with React and Vite.
 
 ## Screenshot
 
-![App Screenshot](./screen/screenshot.png)
+![App Screenshot](./screen/screen.png)
 
 ---
 
