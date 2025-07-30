@@ -304,7 +304,7 @@ body::before {
   gap: 0.75rem;
 }
 
-.list li {
+.todo-item {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -341,7 +341,7 @@ body::before {
   }
 }
 
-.list li::before {
+.todo-item::before {
   content: '';
   position: absolute;
   top: 0;
@@ -355,7 +355,7 @@ body::before {
   border-radius: 0 2px 2px 0;
 }
 
-.list li::after {
+.todo-item::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -369,7 +369,7 @@ body::before {
   opacity: 0.6;
 }
 
-.list li:hover {
+.todo-item:hover {
   transform: translateX(12px) translateY(-2px);
   box-shadow: 
     0 8px 25px hsla(var(--primary-hue), 40%, 15%, 0.4),
@@ -665,3 +665,4 @@ body::before {
     inset 0 1px 0 hsla(var(--primary-hue), 100%, 100%, 0.05),
     -2px 0 8px hsla(120, 60%, 60%, 0.1);
 }
+ 
