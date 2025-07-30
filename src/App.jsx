@@ -1,11 +1,19 @@
 import { NewTodoForm } from "./NewTodoForm";
 import "./styles.css"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TodoList } from "./TodoList";
 
 export default function App() {
- 
-  const [todos,setTodos] = useState([]);
+  const [todos,setTodos] = useState(() => {
+    const localValue = localStorage.getItem("TODOS");
+    if(localValue == null) return [];
+
+    return JSON.parse(localValue);
+  });
+
+  useEffect(() => {
+    localStorage.setItem("TODOS", JSON.stringify(todos));
+  },[todos]); // run this function whenever the inside the array changes
 
   function addTodo(title){
     setTodos((currentTodos)=>{
